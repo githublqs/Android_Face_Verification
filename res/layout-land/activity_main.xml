@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+ 
+   
+ 	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       	android:orientation="horizontal"
+       	android:id="@+id/ll_preview_root" >
+      
+        <include layout="@layout/layout_card_info_width_photo"
+            android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"/>
+
+
+        
+	<RelativeLayout
+	     android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+	     <com.tec.jca.faceverification.MyJavaCameraView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        android:id="@+id/fd_activity_surface_view" />
+
+	     <TextView
+	         android:id="@+id/tv_please_place_face"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_centerHorizontal="true"
+	         android:layout_alignParentTop="true"
+	         android:text="@string/please_place_face"
+	         android:textColor="@color/red_color"
+	         android:textAppearance="?android:attr/textAppearanceMedium" 
+	         android:visibility="gone"/>
+	     
+	       <TextView
+	         android:id="@+id/tv_current_similarity"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_centerHorizontal="true"
+	         android:layout_alignParentBottom="true"
+	         android:textColor="@color/red_blue"
+	         android:textAppearance="?android:attr/textAppearanceMedium" 
+	         />
+
+	</RelativeLayout>
+   
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" 
+         android:visibility="gone"
+         android:id="@+id/ll_tak_verf"
+         >
+
+        <LinearLayout
+            android:id="@+id/ll_current_person_info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+             >
+
+            <TextView
+              
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="@string/current_person_info"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/label_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4" >
+
+                <ImageView
+                    android:id="@+id/tv_vfr_card_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                     android:src="@drawable/face" />
+
+            </RelativeLayout>
+			 <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3" 
+                android:orientation="vertical"
+                >
+			     <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:textColor="@color/label_color" />
+
+                <TextView
+                    android:id="@+id/tv_vfr_card_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name" />
+
+            </LinearLayout>
+ 		<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:textColor="@color/label_color" />
+
+                <TextView
+                    android:id="@+id/tv_vfr_card_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/car_number" />
+
+            </LinearLayout> 
+			 </LinearLayout>
+           
+        </LinearLayout>
+       
+ 	 
+         <FrameLayout  
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:id="@+id/fl_vfr_result"
+             android:visibility="gone">
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+           
+            android:id="@+id/ll_vfr_result"
+             >
+
+ 	     <TextView
+ 	         android:layout_width="match_parent"
+ 	         android:layout_height="0dp"
+ 	         android:layout_weight="3"
+ 	         android:gravity="center"
+ 	         android:text="@string/photo_preview"
+ 	         android:textAppearance="?android:attr/textAppearanceMedium"
+ 	         android:textColor="@color/label_color" />
+ 	     
+ 	     <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4" >
+
+                <ImageView
+                    android:id="@+id/tv_vfr_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/face" />
+ 				<ImageView
+                    android:id="@+id/tv_vfr_sig"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    
+                    android:src="@drawable/yes" />
+ 				
+            </RelativeLayout>
+			
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                  
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/verify_result"
+                    android:textColor="@color/label_color" />
+
+            </LinearLayout>
+ 		<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/verify_similarity"
+                    android:textColor="@color/label_color" />
+
+                
+                <TextView android:id="@+id/tv_vfr_similarity"
+			        android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                   
+                    android:background="@color/red_color"
+			        /> 
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/ll_tak_err"
+             android:visibility="gone"
+            >
+
+            <TextView
+               android:id="@+id/tv_vfr_failure_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                
+                android:textColor="@color/red_color"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+ 		<LinearLayout
+ 		    android:layout_width="match_parent"
+ 		    android:layout_height="wrap_content"
+ 		    android:orientation="vertical" 
+ 		    android:layout_gravity="center">
+
+ 			<LinearLayout
+ 			    android:layout_width="match_parent"
+ 			    android:layout_height="wrap_content" >
+
+ 			    <TextView
+ 			        android:layout_width="wrap_content"
+ 			        android:layout_height="wrap_content"
+ 			        android:text="@string/reason"
+ 			        android:textAppearance="?android:attr/textAppearanceMedium"
+ 			        android:textColor="@color/label_color" />
+
+ 			    <TextView
+ 			        android:id="@+id/tv_vfr_failure_reason"
+ 			        android:layout_width="match_parent"
+ 			        android:layout_height="wrap_content"
+ 			        android:hint="@string/reason"
+ 			        android:textAppearance="?android:attr/textAppearanceMedium" />
+ 			</LinearLayout>
+
+ 			<LinearLayout
+ 			    android:layout_width="match_parent"
+ 			    android:layout_height="wrap_content" >
+
+ 			    <TextView
+ 			        android:layout_width="wrap_content"
+ 			        android:layout_height="wrap_content"
+ 			        android:text="@string/advice"
+ 			        android:textAppearance="?android:attr/textAppearanceMedium"
+ 			        android:textColor="@color/label_color" />
+
+ 			    <TextView
+ 			        android:id="@+id/tv_vfr_failure_advice"
+ 			        android:layout_width="match_parent"
+ 			        android:layout_height="wrap_content"
+ 			        android:hint="@string/advice"
+ 			        android:textAppearance="?android:attr/textAppearanceMedium" />
+ 			</LinearLayout>
+
+ 		</LinearLayout>
+            
+        </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+       <ProgressBar
+        android:id="@+id/pb_loading"
+        style="@style/CustomStyle.ProgressBar" />
+</FrameLayout>

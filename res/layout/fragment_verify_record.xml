@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+   
+    style="@style/CustomStyle.RootView">
+
+  <!-- ProgressBar -->
+
+  <ProgressBar
+      android:id="@+id/pb_loading"
+      style="@style/CustomStyle.ProgressBar"/>
+
+ 
+
+
+  <ListView
+      android:id="@+id/lv_verification_rec"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      
+      >
+     
+     
+  </ListView>
+
+</RelativeLayout>

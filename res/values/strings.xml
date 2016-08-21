@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="loading">加载中...</string>
+    <string name="sdCard">SD卡</string>
+
+    <string name="app_name">人脸识别</string>
+    <string name="manage">管理</string>
+       <string name="action_search_card">寻卡</string>
+    <string name="action_sleep">休眠</string>
+    <string name="action_choose_card">选卡</string>
+    <string name="action_read_card">读卡</string>
+    
+    <string name="hello_world">Hello world!</string>
+    <string name="name">姓名</string>
+    <string name="sex">性别</string>
+ <string name="nationality">名族</string>
+    <string name="birthday">出身日期</string>
+    <string name="address">住址</string>
+    <string name="car_number">身份证号</string>
+    <string name="issue">发证机关</string>
+    <string name="expire_date">有效期</string>
+    <string name="current_person_info">当前人员信息</string>
+    <string name="photo_preview">照片预览</string>
+    <string name="verify_result">验证结果</string>
+    <string name="verify_similarity">品质分值</string>
+     <string name="tak_photo_failure">拍照失败!</string>
+     <string name="ver_time_out">验证超时</string>
+     <string name="read_card_failure">读卡失败!</string>
+     <string name="reason">原因</string>
+    <string name="advice">建议</string>
+     <string name="please_place_face">请正视摄像头!</string>
+     <string name="view_history_record">查看历史记录</string>
+    <string name="ver_detail">验证详情</string>
+    <string name="timeout_tak_pic">拍照超时(s)</string>
+    <string name="min_similarity">最低相似度</string>
+    <string name="use_flashlight">拍照时是否启用闪光灯</string>
+    <string name="tak_pic_playsoud">拍照声音</string>
+    <string name="hint_sound">语音提示</string>
+    <string name="input_tak_pic_timeout_seconds">请输入拍照超时秒数</string>
+    <string name="tak_pic_save_path">图片保存路劲</string>
+    <string name="input_half_to_one_number">请输入0.5到1之间的数字</string>
+      <string name="camera_front_back">摄像头选择</string>
+      <string name="ok">确定</string>
+      <string name="cancel">取消</string>
+    <string name="similarity">相似度</string>
+    <string name="time">验证时间</string>
+ <string-array name="camera_index" >
+        <item >0</item>
+        <item >1</item>
+       
+</string-array>   
+    
+</resources>

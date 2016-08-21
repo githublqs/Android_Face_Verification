@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <color name="main_color">#FFDDDDDD</color>
+ <color name="secondary_color">#FFFFFFFF</color>
+  <color name="third_color">#FF727A7C</color>
+  <color name="fourth_color">#FF57585A</color>
+  <color name="fifth_color">#FFF0F0F0</color>
+  <color name="sixth_color">#FF8B999B</color>
+    <color name="label_color">#FF003361</color>
+    <color name="red_color">#FFFF0000</color>
+    <color name="red_blue">#FF0000FF</color>
+    <color name="green_color">#FF00FF00</color>
+    
+</resources>

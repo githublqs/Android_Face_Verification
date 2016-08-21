@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+      <RelativeLayout
+          android:layout_weight="2"
+          android:layout_width="match_parent"
+          android:layout_height="0dp" 
+          >
+
+          <ImageView
+              android:id="@+id/iv_id_face"
+              style="@style/CustomStyle.EmptyCase"
+              android:layout_alignParentBottom="true"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentRight="true"
+              android:layout_alignParentTop="true"
+              android:src="@drawable/face"
+              android:visibility="visible" />
+
+      </RelativeLayout>
+       <include layout="@layout/layout_card_info"
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="3"
+           />
+
+      
+  </LinearLayout>

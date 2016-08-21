@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="信息" />
+  
+ <Button
+        android:id="@+id/btnypd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="已配對的蓝牙设备" />
+
+ <ListView
+     android:id="@+id/lv_ypd"
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+     
+     android:layout_weight="1" 
+     >
+ </ListView>
+    　
+ <Button
+        android:id="@+id/btnkejianxing"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="設置可见性" />
+ 
+    <Button
+        android:id="@+id/btnsaomiao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="开始扫描" />
+ <ListView
+     android:id="@+id/lv_saomiao"
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+     
+     android:layout_weight="1" 
+     >
+ </ListView>
+　　　　　　　　
+
+</LinearLayout>
